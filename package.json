@@ -1,0 +1,41 @@
+{
+  "title": "Kneiser homepage",
+  "name": "space",
+  "version": "0.1.0",
+  "description": "My professional landing page.",
+  "keywords": [
+    "css",
+    "sass",
+    "html",
+    "responsive",
+    "kneiser"
+  ],
+  "homepage": "https://kneiser.space",
+  "bugs": {
+    "url": "https://github.com/theshteves/space/issues",
+    "email": "steven@kneiser.space"
+  },
+  "license": "MIT",
+  "author": "Steven Kneiser",
+  "contributors": [
+    "David Miller (http://davidmiller.io/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theshteves/space.git"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "font-awesome": "4.7.0",
+    "jquery": "^3.2.1",
+    "simple-line-icons": "^2.4.1"
+  },
+  "devDependencies": {
+    "browser-sync": "2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "3.9.0",
+    "gulp-header": "1.8.9",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  }
+}
