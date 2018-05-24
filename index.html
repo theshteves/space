@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112004024-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'UA-112004024-1');
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-112004024-1');
     </script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- TODO: better description -->
-    <meta name="description" content="Steven Kneiser's homepage">
+    <meta name="description" content="Follow Steven Kneiser on his journey to the center of software, media, & business.">
     <meta name="author" content="Steven Kneiser">
 
     <title>Steven Kneiser</title>
@@ -26,16 +24,9 @@ gtag('config', 'UA-112004024-1');
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-    <!-- Testing Google Fonts
-      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Grand+Hotel" rel="stylesheet" type="text/css">
-      <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|EB+Garamond" rel="stylesheet" type="text/css">
-      <link href="https://fonts.googleapis.com/css?family=Alegreya|Lato" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Unica+One|Vollkorn" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Cagliostro|Kite+One|Port+Lligat+Sans|Raleway" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans|Open+Sans+Condensed" rel="stylesheet">
-    -->
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script:400,500,600,700|Dosis:100,200,600" rel="stylesheet">
 
+    <!--  Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script:400,500,600,700|Dosis:100,200,600" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/landing-page.min.css" rel="stylesheet">
@@ -45,6 +36,49 @@ gtag('config', 'UA-112004024-1');
     <script defer src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <!-- Calendly badge widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+    <script type="text/javascript">Calendly.initBadgeWidget({url: 'https://calendly.com/kneiser', text: 'Schedule a video call', color: '#bb0000', branding: false});</script>
+    <script type="text/javascript">
+      window.addEventListener('DOMContentLoaded', function() {
+        (function($) {
+          $(document).ready(function() {
+            var widget = $(".calendly-badge-widget");
+            widget.fadeOut(0);
+            widget.css('display', 'default');
+            widget.fadeIn(3000);
+            widget.addClass('pulse');
+          });
+        })(jQuery);
+      });
+    </script>
+    <!-- Post-API stylings -->
+    <style>
+      .calendly-badge-widget {
+        font-family: 'Dosis', sans-serif;
+        border-radius: 25px;
+        right: -20px;
+        bottom: -10px;
+        display: none;
+      }
+
+      .calendly-badge-widget:hover {
+        border-radius: 50px;
+        background-color: #000;
+        transform: scale(1.5, 1.5);
+      }
+
+      @media (min-width: 768px) {
+        .calendly-badge-widget {
+          border-radius: 25px;
+          right: 20px;
+          bottom: 15px;
+        }
+      }
+    </style>
+    <!-- Calendly badge widget end -->
   </head>
   <body>
     <!-- Navigation
@@ -158,42 +192,11 @@ gtag('config', 'UA-112004024-1');
           <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/face.jpg');"></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
             <h2>Open Door Policy</h2>
-            <p class="lead mb-0">Everything I do here is for you :3<br>Reach out <em>whenever</em> you wanna chat.</p>
+            <p class="lead mb-0">Everything I do here is for you.  Reach out <em>whenever</em> you want to chat.  You can hop in my Google Calendar with the red button in the corner!</p>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Testimonials
-    <section class="testimonials text-center bg-light">
-      <div class="container">
-        <h2 class="mb-5">What people are saying...</h2>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
-              <h5>Jonathan Shomali</h5>
-              <p class="font-weight-light mb-0">"I've never met someone that juggles software with business &amp; art like Steven."</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
-              <h5>Malik Hall</h5>
-              <p class="font-weight-light mb-0">"Steven..."</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
-              <h5>Someone</h5>
-              <p class="font-weight-light mb-0">"Steven is the reason I got involved with Spartan Hackers &amp; now drive to any hackathon."</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    -->
 
     <!-- Call to Action -->
     <section class="call-to-action text-white text-center">
@@ -233,49 +236,8 @@ gtag('config', 'UA-112004024-1');
       <div class="container">
         <div class="row">
           <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-            <!--
-              <ul class="list-inline mb-2">
-              <li class="list-inline-item">
-              <a href="#">About</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-              <a href="#">Contact</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
-              </li>
-              </ul>
-            -->
             <p class="text-muted small mb-4 mb-lg-0">&copy; Steven Kneiser 2018. All Rights Reserved.</p>
           </div>
-
-          <!--
-            <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-            <ul class="list-inline mb-0">
-            <li class="list-inline-item mr-3">
-            <a href="#">
-            <i class="fab fa-facebook fa-2x fa-fw"></i>
-            </a>
-            </li>
-            <li class="list-inline-item mr-3">
-            <a href="#">
-            <i class="fab fa-twitter fa-2x fa-fw"></i>
-            </a>
-            </li>
-            <li class="list-inline-item">
-            <a href="#">
-            <i class="fab fa-instagram fa-2x fa-fw"></i>
-            </a>
-            </li>
-            </ul>
-            </div>
-          -->
         </div>
       </div>
     </footer>
