@@ -4,10 +4,16 @@
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112004024-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-112004024-1');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-112004024-1');
+
+        // Google Tag Manager
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-THZ6KHT');
     </script>
 
     <!-- General webpage metadata -->
@@ -15,7 +21,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Follow Steven Kneiser on his journey to the intersection of software, media, & business.">
-    <meta name="keywords" content="kneiser,steven kneiser,software,media,business,developer,engineer">
+    <meta name="keywords" content="kneiser,steven kneiser,software,engineer,developer,business,entrepreneur,media,speaker">
     <meta name="author" content="Steven Kneiser">
     <meta name="robots" content="index, follow">
     <link rel="author" href="https://plus.google.com/+StevenKneiser" />
@@ -44,6 +50,7 @@
     <meta itemprop="image" content="https://kneiser.space/img/steven.jpg">
 
     <!-- Bootstrap core CSS -->
+    <!-- TODO: utilize vendor CDNs -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
@@ -104,166 +111,173 @@
     </style>
     <!-- Calendly badge widget end -->
   </head>
+
   <body>
-    <!-- Navigation
-      <nav class="navbar navbar-light bg-light static-top">
-      <div class="container">
-      <a class="navbar-brand" href="#">Steven Kneiser</a>
-      <a class="btn btn-primary" href="#">Sign In</a>
-      </div>
-      </nav>
-    -->
+      <!-- Google Tag Manager (noscript) -->
+      <noscript>
+          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THZ6KHT" height="0" width="0" style="display:none;visibility:hidden">
+          </iframe>
+      </noscript>
 
-    <!-- Masthead -->
-    <header class="masthead text-white text-center">
-      <!--<div class="overlay"></div>-->
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-9 mx-auto">
-            <h1 class="mb-5">Let's keep in touch!</h1>
-            <h3 class="mb-5">A personal note from me to you every week.</h1>
+      <!-- Navigation
+          <nav class="navbar navbar-light bg-light static-top">
+          <div class="container">
+          <a class="navbar-brand" href="#">Steven Kneiser</a>
+          <a class="btn btn-primary" href="#">Sign In</a>
           </div>
-          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form action="https://space.us17.list-manage.com/subscribe/post" method="POST"> <!-- http://eepurl.com/diA93L -->
-              <input type="hidden" name="u" value="4ffc5ac42a6fc99c35908c894">
-              <input type="hidden" name="id" value="ddcf8c9f4b">
-              <input type="hidden" name="SIGNUP" value="kneiser.space">
-              <div class="form-row">
-                <div class="col-12 col-md-5 mb-2 mb-md-0">
-                  <input type="email" name="MERGE0" class="form-control form-control-lg" placeholder="steven@kneiser.space">
-                </div>
-                <div class="col-12 col-md-2 mb-2 mb-md-0">
-                  <input type="text" name="FNAME" class="form-control form-control-lg" placeholder="Steven">
-                </div>
-                <div class="col-12 col-md-3 mb-2 mb-md-0">
-                  <input type="text" name="LNAME" class="form-control form-control-lg" placeholder="Kneiser">
-                </div>
-                <div class="col-12 col-md-2">
-                  <button type="submit" class="btn btn-block btn-lg btn-primary">Send it</button>
-                </div>
+          </nav>
+      -->
+
+      <!-- Masthead -->
+      <header class="masthead text-white text-center">
+          <!--<div class="overlay"></div>-->
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-9 mx-auto">
+                      <h1 class="mb-5">Let's keep in touch!</h1>
+                      <h3 class="mb-5">A personal note from me to you every week.</h1>
+                  </div>
+                  <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                      <form action="https://space.us17.list-manage.com/subscribe/post" method="POST"> <!-- http://eepurl.com/diA93L -->
+                          <input type="hidden" name="u" value="4ffc5ac42a6fc99c35908c894">
+                          <input type="hidden" name="id" value="ddcf8c9f4b">
+                          <input type="hidden" name="SIGNUP" value="kneiser.space">
+                          <div class="form-row">
+                              <div class="col-12 col-md-5 mb-2 mb-md-0">
+                                  <input type="email" name="MERGE0" class="form-control form-control-lg" placeholder="steven@kneiser.space">
+                              </div>
+                              <div class="col-12 col-md-2 mb-2 mb-md-0">
+                                  <input type="text" name="FNAME" class="form-control form-control-lg" placeholder="Steven">
+                              </div>
+                              <div class="col-12 col-md-3 mb-2 mb-md-0">
+                                  <input type="text" name="LNAME" class="form-control form-control-lg" placeholder="Kneiser">
+                              </div>
+                              <div class="col-12 col-md-2">
+                                  <button type="submit" class="btn btn-block btn-lg btn-primary">Send it</button>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
               </div>
-            </form>
           </div>
-        </div>
-      </div>
-    </header>
+      </header>
 
-    <!-- Icons Grid -->
-    <section class="features-icons bg-light text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <a href="https://twitter.com/theshteves" style="color: inherit">
-              <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                <div class="features-icons-icon d-flex">
-                  <i class="fab fa-twitter fa-4x m-auto" style="color: #00aced"></i>
-                  <!-- <i class="icon-screen-desktop m-auto text-primary"></i> -->
-                </div>
-                <h3>Twitter</h3>
-                <p class="lead mb-0">The most direct &amp; personal way to reach out.</p>
+      <!-- Icons Grid -->
+      <section class="features-icons bg-light text-center">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-4">
+                      <a href="https://twitter.com/theshteves" style="color: inherit">
+                          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                              <div class="features-icons-icon d-flex">
+                                  <i class="fab fa-twitter fa-4x m-auto" style="color: #00aced"></i>
+                                  <!-- <i class="icon-screen-desktop m-auto text-primary"></i> -->
+                              </div>
+                              <h3>Twitter</h3>
+                              <p class="lead mb-0">The most direct &amp; personal way to reach out.</p>
+                          </div>
+                      </a>
+                  </div>
+
+                  <div class="col-lg-4">
+                      <a href="https://www.youtube.com/channel/UC7LCdJZS9HalXDzVHq6QJ1w" style="color: inherit">
+                          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                              <div class="features-icons-icon d-flex">
+                                  <i class="fab fa-youtube fa-4x m-auto" style="color: #bb0000"></i>
+                                  <!-- <i class="icon-layers m-auto text-primary"></i> -->
+                              </div>
+                              <h3>YouTube</h3>
+                              <p class="lead mb-0">Get notified whenever I release new content.</p>
+                          </div>
+                      </a>
+                  </div>
+
+                  <div class="col-lg-4">
+                      <a href="https://linkedin.com/in/stevenkneiser" style="color: inherit">
+                          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                              <div class="features-icons-icon d-flex">
+                                  <i class="fab fa-linkedin fa-4x m-auto" style="color: #007bb6"></i>
+                                  <!-- <i class="icon-check m-auto text-primary"></i> -->
+                              </div>
+                              <h3>LinkedIn</h3>
+                              <p class="lead mb-0">Want to do business? A curated list of my professional experiences.</p>
+                          </div>
+                      </a>
+                  </div>
               </div>
-            </a>
           </div>
+      </section>
 
-          <div class="col-lg-4">
-            <a href="https://www.youtube.com/channel/UC7LCdJZS9HalXDzVHq6QJ1w" style="color: inherit">
-              <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                <div class="features-icons-icon d-flex">
-                  <i class="fab fa-youtube fa-4x m-auto" style="color: #bb0000"></i>
-                  <!-- <i class="icon-layers m-auto text-primary"></i> -->
-                </div>
-                <h3>YouTube</h3>
-                <p class="lead mb-0">Get notified whenever I release new content.</p>
+      <!-- Image Showcases -->
+      <section class="showcase">
+          <div class="container-fluid p-0">
+              <div class="row no-gutters">
+
+                  <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/walk.jpg');"></div>
+                  <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                      <h2>Work-Life balance</h2>
+                      <p class="lead mb-0">After four years of immersing myself in every software class, club, conference, and side-project, I'm taking the time explore my other interests and combine the things that excite me across design, media, and business.  As an insatiable learning-junkie, I've always preached the need for inter-disciplinarian learning and now I'm beginning to walk the walk.</p>
+                  </div>
               </div>
-            </a>
-          </div>
-
-          <div class="col-lg-4">
-            <a href="https://linkedin.com/in/stevenkneiser" style="color: inherit">
-              <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                <div class="features-icons-icon d-flex">
-                  <i class="fab fa-linkedin fa-4x m-auto" style="color: #007bb6"></i>
-                  <!-- <i class="icon-check m-auto text-primary"></i> -->
-                </div>
-                <h3>LinkedIn</h3>
-                <p class="lead mb-0">Want to do business? A curated list of my professional experiences.</p>
+              <div class="row no-gutters">
+                  <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/speaker.jpg');"></div>
+                  <div class="col-lg-6 my-auto showcase-text">
+                      <h2>Keynotes &amp; Workshops</h2>
+                      <p class="lead mb-0">Looking for someone to educate <strong>AND</strong> entertain?<br>I love to share my knowledge of software, experiences as a student, and on-going journey into the world of uncertainty.  Ping me the next time you need someone to bring the fun and leave your audience inspired to make a change.</p>
+                  </div>
               </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Image Showcases -->
-    <section class="showcase">
-      <div class="container-fluid p-0">
-        <div class="row no-gutters">
-
-          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/walk.jpg');"></div>
-          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2>Work-Life balance</h2>
-            <p class="lead mb-0">After four years of immersing myself in every software class, club, conference, and side-project, I'm taking the time explore my other interests and combine the things that excite me across design, media, and business.  As an insatiable learning-junkie, I've always preached the need for inter-disciplinarian learning and now I'm beginning to walk the walk.</p>
-          </div>
-        </div>
-        <div class="row no-gutters">
-          <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/speaker.jpg');"></div>
-          <div class="col-lg-6 my-auto showcase-text">
-            <h2>Keynotes &amp; Workshops</h2>
-            <p class="lead mb-0">Looking for someone to educate <strong>AND</strong> entertain?<br>I love to share my knowledge of software, experiences as a student, and on-going journey into the world of uncertainty.  Ping me the next time you need someone to bring the fun and leave your audience inspired to make a change.</p>
-          </div>
-        </div>
-        <div class="row no-gutters">
-          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/face.jpg');"></div>
-          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2>Open Door Policy</h2>
-            <p class="lead mb-0">Everything I do here is for you.  Reach out <em>whenever</em> you want to chat.  You can hop in my Google Calendar with the red button in the corner!</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="call-to-action text-white text-center">
-      <!-- <div class="overlay"></div> -->
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-9 mx-auto">
-            <h2 class="mb-4">Let's get started</h2>
-          </div>
-          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form action="https://space.us17.list-manage.com/subscribe/post" method="POST"> <!-- http://eepurl.com/diA93L -->
-              <input type="hidden" name="u" value="4ffc5ac42a6fc99c35908c894">
-              <input type="hidden" name="id" value="ddcf8c9f4b">
-              <input type="hidden" name="SIGNUP" value="kneiser.space">
-              <div class="form-row">
-                <div class="col-12 col-md-5 mb-2 mb-md-0">
-                  <input type="email" name="MERGE0" class="form-control form-control-lg" placeholder="steven@kneiser.space">
-                </div>
-                <div class="col-12 col-md-2 mb-2 mb-md-0">
-                  <input type="text" name="FNAME" class="form-control form-control-lg" placeholder="Steven">
-                </div>
-                <div class="col-12 col-md-3 mb-2 mb-md-0">
-                  <input type="text" name="LNAME" class="form-control form-control-lg" placeholder="Kneiser">
-                </div>
-                <div class="col-12 col-md-2">
-                  <button type="submit" class="btn btn-block btn-lg btn-primary">Send it</button>
-                </div>
+              <div class="row no-gutters">
+                  <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/face.jpg');"></div>
+                  <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                      <h2>Open Door Policy</h2>
+                      <p class="lead mb-0">Everything I do here is for you.  Reach out <em>whenever</em> you want to chat.  You can hop in my Google Calendar with the red button in the corner!</p>
+                  </div>
               </div>
-            </form>
           </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer class="footer bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-            <p class="text-muted small mb-4 mb-lg-0">&copy; Steven Kneiser 2018. All Rights Reserved.</p>
+      <!-- Call to Action -->
+      <section class="call-to-action text-white text-center">
+          <!-- <div class="overlay"></div> -->
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-9 mx-auto">
+                      <h2 class="mb-4">Let's get started</h2>
+                  </div>
+                  <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                      <form action="https://space.us17.list-manage.com/subscribe/post" method="POST"> <!-- http://eepurl.com/diA93L -->
+                          <input type="hidden" name="u" value="4ffc5ac42a6fc99c35908c894">
+                          <input type="hidden" name="id" value="ddcf8c9f4b">
+                          <input type="hidden" name="SIGNUP" value="kneiser.space">
+                          <div class="form-row">
+                              <div class="col-12 col-md-5 mb-2 mb-md-0">
+                                  <input type="email" name="MERGE0" class="form-control form-control-lg" placeholder="steven@kneiser.space">
+                              </div>
+                              <div class="col-12 col-md-2 mb-2 mb-md-0">
+                                  <input type="text" name="FNAME" class="form-control form-control-lg" placeholder="Steven">
+                              </div>
+                              <div class="col-12 col-md-3 mb-2 mb-md-0">
+                                  <input type="text" name="LNAME" class="form-control form-control-lg" placeholder="Kneiser">
+                              </div>
+                              <div class="col-12 col-md-2">
+                                  <button type="submit" class="btn btn-block btn-lg btn-primary">Send it</button>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
           </div>
-        </div>
-      </div>
-    </footer>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer bg-light">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+                      <p class="text-muted small mb-4 mb-lg-0">&copy; Steven Kneiser 2018. All Rights Reserved.</p>
+                  </div>
+              </div>
+          </div>
+      </footer>
   </body>
 </html>
