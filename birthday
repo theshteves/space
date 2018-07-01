@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112004024-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-112004024-1');
+
+            // Google Tag Manager
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+            var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+            j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-THZ6KHT');
+        </script>
+
+        <!-- General webpage metadata -->
+        <title>Kneiser #22</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Community art project for Steven Kneiser's 22nd birthday.">
+        <meta name="keywords" content="kneiser,steven kneiser,birthday,software,engineer,developer,business,entrepreneur,media,speaker">
+        <meta name="author" content="Steven Kneiser">
+        <meta name="robots" content="noindex, follow">
+        <link rel="author" href="https://plus.google.com/+StevenKneiser" />
+        <link rel="canonical" href="https://kneiser.space" />
+        <link rel="icon" href="https://kneiser.space/img/favicon.ico" type="image/x-icon" />
+
+        <!-- Facebook metadata -->
+        <meta property="og:url" content="https://kneiser.space/birthday">
+        <meta property="og:title" content="#Birthday22">
+        <meta property="og:description" content="Community art project for Steven Kneiser's 22nd birthday.">
+        <meta property="og:image" content="https://kneiser.space/img/steven.jpg">
+        <meta property="og:site_name" content="Birthday22">
+        <meta property="og:see_also" content="https://kneiser.space">
+    </head>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THZ6KHT" height="0" width="0" style="display:none;visibility:hidden">
+            </iframe>
+        </noscript>
+
+        <script>window.location = "http://ec2-52-15-146-140.us-east-2.compute.amazonaws.com";</script>
+    </body>
+</html>
