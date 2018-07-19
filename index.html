@@ -17,8 +17,8 @@
     </script>
 
     <!-- General webpage metadata -->
-    <title>Steven Kneiser</title>
     <meta charset="utf-8">
+    <title>Steven Kneiser</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Follow Steven Kneiser on his journey to the intersection of software, media, & business.">
     <meta name="keywords" content="kneiser,steven kneiser,software,engineer,developer,business,entrepreneur,media,speaker">
@@ -32,7 +32,7 @@
     <meta property="og:url" content="https://kneiser.space">
     <meta property="og:title" content="Steven Kneiser">
     <meta property="og:description" content="Follow Steven Kneiser on his journey to the intersection of software, media, & business.">
-    <meta property="og:image" content="https://kneiser.space/img/steven.jpg">
+    <meta property="og:image" content="https://kneiser.space/img/optimized/steven.jpg">
     <meta property="og:site_name" content="Steven Kneiser">
     <meta property="og:see_also" content="https://kneiser.space">
 
@@ -41,21 +41,16 @@
     <meta name="twitter:url" content="@theshteves">
     <meta name="twitter:title" content="Steven Kneiser">
     <meta name="twitter:description" content="Follow Steven Kneiser on his journey to the intersection of software, media, & business.">
-    <meta name="twitter:image" content="https://kneiser.space/img/steven.jpg">
+    <meta name="twitter:image" content="https://kneiser.space/img/optimized/steven.jpg">
     <meta name="twitter:image:alt" content="Steven Kneiser">
 
     <!-- Google+ metadata -->
     <meta itemprop="name" content="Steven Kneiser">
     <meta itemprop="description" content="Follow Steven Kneiser on his journey to the intersection of software, media, & business.">
-    <meta itemprop="image" content="https://kneiser.space/img/steven.jpg">
+    <meta itemprop="image" content="https://kneiser.space/img/optimized/steven.jpg">
 
     <!-- Bootstrap core CSS -->
-    <!-- TODO: utilize vendor CDNs -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet">
 
     <!--  Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script:400,500,600,700|Dosis:100,200,600" rel="stylesheet">
@@ -65,7 +60,7 @@
 
     <!-- Bootstrap core JavaScript -->
     <script defer src="vendor/jquery/jquery.min.js"></script>
-    <script defer src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
     <!-- Calendly badge widget begin -->
@@ -118,17 +113,10 @@
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THZ6KHT" height="0" width="0" style="display:none;visibility:hidden">
           </iframe>
       </noscript>
-
-      <!-- Navigation
-          <nav class="navbar navbar-light bg-light static-top">
-          <div class="container">
-          <a class="navbar-brand" href="#">Steven Kneiser</a>
-          <a class="btn btn-primary" href="#">Sign In</a>
-          </div>
-          </nav>
-      -->
+      <h1 class="hidden">Steven Kneiser</h1>
 
       <!-- Masthead -->
+      <h2 class="hidden">Mailing List sign-up</h2>
       <header class="masthead text-white text-center">
           <!--<div class="overlay"></div>-->
           <div class="container">
@@ -141,7 +129,7 @@
                       <form action="https://space.us17.list-manage.com/subscribe/post" method="POST"> <!-- http://eepurl.com/diA93L -->
                           <input type="hidden" name="u" value="4ffc5ac42a6fc99c35908c894">
                           <input type="hidden" name="id" value="ddcf8c9f4b">
-                          <input type="hidden" name="SIGNUP" value="kneiser.space">
+                          <input type="hidden" id="SIGNUP" name="SIGNUP" value="kneiser.space">
                           <div class="form-row">
                               <div class="col-12 col-md-5 mb-2 mb-md-0">
                                   <input type="email" name="MERGE0" class="form-control form-control-lg" placeholder="steven@kneiser.space">
@@ -163,6 +151,7 @@
       </header>
 
       <!-- Icons Grid -->
+      <h2 class="hidden">Social media links</h2>
       <section class="features-icons bg-light text-center">
           <div class="container">
               <div class="row">
@@ -171,7 +160,6 @@
                           <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                               <div class="features-icons-icon d-flex">
                                   <i class="fab fa-twitter fa-4x m-auto" style="color: #00aced"></i>
-                                  <!-- <i class="icon-screen-desktop m-auto text-primary"></i> -->
                               </div>
                               <h3>Twitter</h3>
                               <p class="lead mb-0">The most direct &amp; personal way to reach out.</p>
@@ -184,7 +172,6 @@
                           <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                               <div class="features-icons-icon d-flex">
                                   <i class="fab fa-youtube fa-4x m-auto" style="color: #bb0000"></i>
-                                  <!-- <i class="icon-layers m-auto text-primary"></i> -->
                               </div>
                               <h3>YouTube</h3>
                               <p class="lead mb-0">Get notified whenever I release new content.</p>
@@ -197,7 +184,6 @@
                           <div class="features-icons-item mx-auto mb-0 mb-lg-3">
                               <div class="features-icons-icon d-flex">
                                   <i class="fab fa-linkedin fa-4x m-auto" style="color: #007bb6"></i>
-                                  <!-- <i class="icon-check m-auto text-primary"></i> -->
                               </div>
                               <h3>LinkedIn</h3>
                               <p class="lead mb-0">Want to do business? A curated list of my professional experiences.</p>
@@ -209,25 +195,26 @@
       </section>
 
       <!-- Image Showcases -->
+      <h2 class="hidden">Professional skills</h2>
       <section class="showcase">
           <div class="container-fluid p-0">
               <div class="row no-gutters">
 
-                  <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/walk.jpg');"></div>
+                  <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/optimized/walk.jpg');"></div>
                   <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                       <h2>Work-Life balance</h2>
                       <p class="lead mb-0">After four years of immersing myself in every software class, club, conference, and side-project, I'm taking the time explore my other interests and combine the things that excite me across design, media, and business.  As an insatiable learning-junkie, I've always preached the need for inter-disciplinarian learning and now I'm beginning to walk the walk.</p>
                   </div>
               </div>
               <div class="row no-gutters">
-                  <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/speaker.jpg');"></div>
+                  <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/optimized/speaker.jpg');"></div>
                   <div class="col-lg-6 my-auto showcase-text">
                       <h2>Keynotes &amp; Workshops</h2>
                       <p class="lead mb-0">Looking for someone to educate <strong>AND</strong> entertain?<br>I love to share my knowledge of software, experiences as a student, and on-going journey into the world of uncertainty.  Ping me the next time you need someone to bring the fun and leave your audience inspired to make a change.</p>
                   </div>
               </div>
               <div class="row no-gutters">
-                  <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/face.jpg');"></div>
+                  <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/optimized/face.jpg');"></div>
                   <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                       <h2>Open Door Policy</h2>
                       <p class="lead mb-0">Everything I do here is for you.  Reach out <em>whenever</em> you want to chat.  You can hop in my Google Calendar with the red button in the corner!</p>
@@ -237,15 +224,15 @@
       </section>
 
       <!-- Call to Action -->
+      <h2 class="hidden">Call to action</h2>
       <section class="call-to-action text-white text-center">
-          <!-- <div class="overlay"></div> -->
           <div class="container">
               <div class="row">
                   <div class="col-xl-9 mx-auto">
                       <h2 class="mb-4">Let's get started</h2>
                   </div>
                   <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                      <form action="https://space.us17.list-manage.com/subscribe/post" method="POST"> <!-- http://eepurl.com/diA93L -->
+                      <form action="https://space.us17.list-manage.com/subscribe/post" method="POST">
                           <input type="hidden" name="u" value="4ffc5ac42a6fc99c35908c894">
                           <input type="hidden" name="id" value="ddcf8c9f4b">
                           <input type="hidden" name="SIGNUP" value="kneiser.space">
