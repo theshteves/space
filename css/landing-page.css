@@ -54,6 +54,9 @@ button, input, optgroup, select, textarea {
   border-color: #0c5ad5;
   font-weight: 700; }
 
+.hidden {
+  display: none; }
+
 header.masthead {
   position: relative;
   background-color: #343a40;
@@ -161,3 +164,13 @@ footer.footer {
   100% {
     -moz-box-shadow: 0 0 0 0 rgba(187, 0, 0, 0);
     box-shadow: 0 0 0 0 rgba(187, 0, 0, 0); } }
+
+.fadeIn {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear; }
+
+.fadeOut {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear; }
