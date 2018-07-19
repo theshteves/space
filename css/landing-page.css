@@ -60,7 +60,7 @@ button, input, optgroup, select, textarea {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../img/amber_bg.png") no-repeat center center;
+  background: url("../img/optimized/amber_bg.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -120,7 +120,7 @@ header.masthead {
 .call-to-action {
   position: relative;
   background-color: #343a40;
-  background: url("../img/amber_bg.png") no-repeat center center;
+  background: url("../img/optimized/amber_bg.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
