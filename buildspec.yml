@@ -11,4 +11,4 @@ phases:
      - aws s3 sync --delete . "s3://dev.space"
  post_build:
    commands:
-- echo "post_build step"
+     - echo "post_build step"
